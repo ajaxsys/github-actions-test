@@ -23,3 +23,8 @@ jobs:
     - name: Run build  
       run: ./gradlew build
 
+    - name: Run run test  
+      run: ./gradlew test
+
+    - name: Run 
+      run: ./gradlew run
