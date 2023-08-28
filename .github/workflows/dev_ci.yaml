@@ -1,0 +1,18 @@
+# dev: parant branch
+name: Parent Cache Demo
+on: 
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    # build to see if have gradle chache
+    - name: Run build  
+      run: ./gradlew build
+
