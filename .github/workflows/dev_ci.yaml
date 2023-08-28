@@ -3,6 +3,7 @@ name: Parent Cache Demo
 on: 
   push:
     branches:
+      - main
       - dev
 
 jobs:
