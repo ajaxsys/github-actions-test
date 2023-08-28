@@ -16,7 +16,8 @@ jobs:
     - name: Run build
       run: ./gradlew build
 
-    # Next1 : enable plugin and see if hit cache - NO hit
+    # Next1 : enable plugin and see if hit cache - NO hit, test cache with more push
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
     # Next2 : merge plugin and see if hit cache - first main NO hit
     # Next3 : create PR2 and see cache HIT
-    # - uses: gradle/gradle-build-action@v2
