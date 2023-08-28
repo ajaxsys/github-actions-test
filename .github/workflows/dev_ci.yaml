@@ -20,7 +20,7 @@ jobs:
         gradle-home-cache-cleanup: true
         cache-read-only: ${{ github.ref != 'refs/heads/main' && github.ref != 'refs/heads/dev' }}
 
-    # build to see if have gradle chache, try more push 2
+    # build to see if have gradle chache, try more push of main 1
     - name: Run build  
       run: ./gradlew build
 
